@@ -1,0 +1,12 @@
+var x, y :real;
+begin
+writeln('введите x');
+readln(x);
+if (x<-9) then 
+  y:=x*(power(e,x))
+else if(-9<=x) and (x<-1)  then 
+  y:= (power(x,3))/60
+else if (-1<=x) then 
+  y:= (power(x,0.1*x))-tan(x);
+writeln('f(',x:0:2,')=',y:0:2);
+end.
